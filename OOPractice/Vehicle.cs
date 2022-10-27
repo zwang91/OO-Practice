@@ -11,7 +11,7 @@ public class Vehicle
         Speed = speed;
     }
 
-    public string SpeedUp()
+    public virtual string SpeedUp()
     {
         return $"{Name}: speed up {Speed} km/h";
     }

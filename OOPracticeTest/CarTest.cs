@@ -6,10 +6,11 @@ namespace OOPracticeTest
     public class CarTest
     {
         [Fact]
-        public void Should_return_message_when_speed_up_given_car_name()
+        public void Should_return_message_when_speed_up_given_car_name_and_engine_gasoline()
         {
             // given
-            Car car = new Car("Cool Car", 30);
+            Engine engine = new Engine("Gasoline");
+            Vehicle car = new Car("Cool Car", engine.Speed);
             // when
             string message = car.SpeedUp();
             // then
